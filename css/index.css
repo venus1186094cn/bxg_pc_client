@@ -86,21 +86,44 @@
 }
 .banner .more a {
   display: block;
+  width: 340px;
   height: 90px;
-  padding-top: 15px;
   font-size: 18px;
   color: #fff;
+  line-height: 90px;
+  padding-left: 50px;
 }
-.banner .more img {
-  margin-right: 10px;
+
+.banner .more li:nth-child(1) a {
+  background: url(../images/bgicon1.png) no-repeat 80px 15px;
+}
+.banner .more li:nth-child(2) a {
+  background: url(../images/bgicon2.png) no-repeat 80px 15px;
+}
+.banner .more li:nth-child(3) a {
+  background: url(../images/bgicon3.png) no-repeat 80px 15px;
+}
+.banner .more li:nth-child(4) a {
+  background: url(../images/bgicon4.png) no-repeat 80px 15px;
 }
 .banner .more .current {
   background-color: #ff7900;
 }
 .banner .more a:hover {
-  background-color: #ff7900;
+  background-color: #ff7900 !important;
 }
-
+.banner .more li:nth-child(1) a:hover{
+  background-image:url(../images/bgicon1.gif);
+}
+.banner .more li:nth-child(2) a:hover{
+  background-image:url(../images/bgicon2.gif);
+}
+.banner .more li:nth-child(3) a:hover{
+  background-image:url(../images/bgicon3.gif);
+}
+.banner .more li:nth-child(4) a:hover{
+  background-image:url(../images/bgicon4.gif);
+}
 /* 交互实验室区域 -------------------------------------- */
 .jhsys,
 .zytx,
@@ -321,7 +344,35 @@
   font-size: 18px;
   color: #666;
 }
-
+.rmjyb .bg {
+  position: relative;
+}
+.rmjyb .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 658px;
+  height: 138px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px 10px 0 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.rmjyb .look {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fe933a;
+  color: #fff;
+  text-align: center;
+  transform: translate(-50%);
+}
+.rmjyb .bg:hover .mask {
+  opacity: 1;
+}
 /*推荐讲师区域 ---------------------------------------- */
 .tjjs .bd {
   margin-top: 30px;
@@ -369,8 +420,8 @@
 }
 
 /* 传智旗下品牌区域 ---------------------------------------- */
-.goods{
-  margin-bottom:100px;
+.goods {
+  margin-bottom: 100px;
 }
 .goods .logo {
   height: 100px;
@@ -385,4 +436,3 @@
   display: inline-block;
   margin: 20px 10px;
 }
-

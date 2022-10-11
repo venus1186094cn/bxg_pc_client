@@ -1,0 +1,175 @@
+/* 头部区域 --------------------------------- */
+.header .shortcut {
+  height: 60px;
+  background: #252b31;
+}
+.header .shortcut h1 {
+  float: left;
+  width: 121px;
+  height: 40px;
+}
+.header .shortcut h1 a {
+  display: block;
+  width: 121px;
+  height: 40px;
+  margin-top: 10px;
+  background: url(../images/logo.png) no-repeat;
+  background-size: contain;
+  font-size: 0;
+}
+.header .shortcut form {
+  margin-top: 15px;
+  font-size: 0;
+}
+.header .shortcut form a {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-size: 15px;
+  color: #fff;
+}
+.header .shortcut .reg {
+  margin-right: 20px;
+}
+.header .shortcut form a:hover {
+  border: 0;
+  background: #ff7900;
+}
+
+/* ----------------------------------- */
+.header .nav {
+  height: 60px;
+}
+.header .nav a {
+  font-size: 18px;
+  line-height: 60px;
+  color: #656e79;
+}
+.header .nav .title1 > li {
+  float: left;
+  position: relative;
+  margin-right: 50px;
+}
+.header .nav .title1 > li:last-child a{
+  line-height: 55px;
+}
+.header .nav .current {
+  color: #ff7900;
+}
+.header .nav .title2 {
+  display: none;
+  position: absolute;
+  left: -20px;
+  top: 60px;
+  width: 140px;
+  border-radius: 15px;
+  text-indent: 22px;
+  background-color: #fff;
+}
+.header .nav .title2 a {
+  line-height: 40px;
+}
+.header .nav .title1 > li:hover .title2 {
+  display: block;
+}
+.header .newlogo {
+  position: relative;
+}
+.header .newlogo::before {
+  position: absolute;
+  top: -10px;
+  right: -30px;
+  content: "";
+  width: 27px;
+  height: 15px;
+  background: url(../images/new_whitebgd.gif);
+  background-size: contain;
+}
+
+.header .fr a {
+  float: left;
+}
+.header .fr .hdsgj {
+  padding-right: 30px;
+}
+.header .fr .load {
+  position: relative;
+}
+.header .fr .load::before {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  content: "";
+  width: 120px;
+  height: 120px;
+  background-image: url(../images/downcode.png);
+  background-size: contain;
+}
+.header .fr .load:hover::before {
+  display: block;
+}
+.header .fr span {
+  padding-left: 30px;
+  border-left: 1px solid #656e79;
+}
+.header a:hover {
+  color: #ff7900;
+}
+
+/* 底部区域----------------------------------- */
+.footer {
+  background-color: #2c3034;
+  text-align: center;
+  overflow: hidden;
+}
+.footer .call {
+  margin: 30px auto;
+}
+.footer .wb {
+  margin-right: 30px;
+}
+.footer .links a {
+  color: #fff;
+}
+.footer .links a:not(:last-child) {
+  margin-right: 40px;
+}
+.footer .top {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #4d525a;
+}
+
+.footer .bottom {
+  padding: 30px 0px;
+}
+.footer .bottom p {
+  color: #97979c;
+  line-height: 2;
+}
+
+/* 侧边导航条区域------------------------------- */
+.aside-nav {
+  position: fixed;
+  bottom:50px;
+  right: 0;
+  width: 80px;
+  box-shadow: 0 2px 14px 0 rgba(0,0,0,0.04);
+}
+.aside-nav ul {
+  margin: 0 12px;
+}
+.aside-nav li{
+  padding:15px 0px;
+  text-align:center;
+}
+.aside-nav li:not(:last-child){
+  border-bottom: 1px solid #EEEEEE;
+}
+.aside-nav a{
+  color: #888;
+}

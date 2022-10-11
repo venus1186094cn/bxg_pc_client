@@ -1,0 +1,388 @@
+/* banner内容区域 ---------------------------------- */
+.banner {
+  background-color: #264ada;
+}
+.banner .aside {
+  width: 200px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.3);
+  line-height: 45px;
+}
+.banner .aside a {
+  display: block;
+}
+.banner .aside a:hover {
+  background-color: #ff7900;
+}
+.banner .aside h2 {
+  margin: 0 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.banner .aside span {
+  float: left;
+}
+.banner .aside h2::after {
+  content: ">";
+  float: right;
+  display: none;
+}
+.banner .aside a:hover h2 {
+  transform: translate(10px);
+}
+.banner .aside a:hover h2::after {
+  display: block;
+}
+.banner .article {
+  width: 300px;
+  height: 450px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.banner .hd {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.banner .hd a {
+  display: inline-block;
+  height: 40px;
+  font-size: 14px;
+  color: #fff;
+}
+.banner .hd .current {
+  margin: 0 36px;
+}
+.banner .hd a:hover {
+  border-bottom: 1px solid #ff7900;
+}
+.banner .bd ul {
+  margin: 25px 30px 30px;
+  list-style: disc;
+  color: #fff;
+}
+.banner .bd a {
+  font-size: 13px;
+  line-height: 36px;
+  color: #fff;
+}
+.banner .bd a:hover {
+  color: #ff7900;
+}
+
+.banner .more {
+  height: 90px;
+  background-color: #191e26;
+}
+.banner .more li {
+  float: left;
+  width: 340px;
+  height: 90px;
+  text-align: center;
+}
+.banner .more a {
+  display: block;
+  height: 90px;
+  padding-top: 15px;
+  font-size: 18px;
+  color: #fff;
+}
+.banner .more img {
+  margin-right: 10px;
+}
+.banner .more .current {
+  background-color: #ff7900;
+}
+.banner .more a:hover {
+  background-color: #ff7900;
+}
+
+/* 交互实验室区域 -------------------------------------- */
+.jhsys,
+.zytx,
+.rxkc,
+.rmjyb,
+.goods {
+  margin: 50px auto;
+}
+.jhsys .hd h2 {
+  font-size: 25px;
+  font-weight: 400;
+  color: #333;
+}
+.jhsys .hd .more {
+  padding-top: 10px;
+  color: #8b8a8b;
+}
+.jhsys .bd {
+  position: relative;
+  height: 394px;
+  background: url(../images/lightning_bg.gif) no-repeat;
+  background-size: cover;
+}
+
+.jhsys .pic {
+  position: absolute;
+  width: 202px;
+  height: 112px;
+  background: url(../images/lightning.png) no-repeat;
+  background-size: contain;
+}
+.jhsys .pic span {
+  position: absolute;
+  top: 35px;
+  left: 35px;
+  color: #f72b58;
+}
+.jhsys .pic p {
+  position: absolute;
+  top: 25px;
+  left: 85px;
+  color: #9e9e9e;
+}
+.jhsys .pic img {
+  position: absolute;
+  transform: scale(1.2);
+  top: 25px;
+  left: 25px;
+}
+.jhsys .pic1 {
+  top: 45px;
+  left: 38px;
+}
+.jhsys .pic2 {
+  top: 137px;
+  left: 179px;
+}
+.jhsys .pic3 {
+  top: 165px;
+  left: 376px;
+}
+.jhsys .pic4 {
+  top: 155px;
+  right: 354px;
+}
+.jhsys .pic5 {
+  top: 69px;
+  right: 188px;
+}
+.jhsys .pic6 {
+  top: 143px;
+  right: 0;
+}
+.jhsys .mask {
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  width: 174px;
+  height: 70px;
+  border-radius: 5px;
+  background: #ff7900;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  line-height: 70px;
+
+  opacity: 0;
+}
+.jhsys .mask::before {
+  position: absolute;
+  left: 73px;
+  bottom: -27px;
+  content: "";
+  width: 0;
+  height: 0;
+  border: 14px solid transparent;
+  border-top-color: #ff7900;
+  opacity: 0;
+}
+.jhsys .mask:hover,
+.jhsys .mask:hover::before {
+  opacity: 1;
+}
+
+/*  职业体系区域 -------------------------------------- */
+.zytx .hd a,
+.rxkc .hd a {
+  font-size: 25px;
+  color: #999;
+}
+.zytx .hd .current,
+.rxkc .hd .current {
+  color: #333;
+  padding-right: 15px;
+}
+.zytx .hd a:last-child,
+.rxkc .hd a:last-child {
+  padding-left: 15px;
+  border-left: 1px solid #999;
+}
+.zytx .more,
+.rxkc .more {
+  margin-top: 30px;
+}
+.zytx li {
+  float: left;
+  border: 2px solid #efefef;
+  border-radius: 10px;
+  width: 310px;
+  height: 290px;
+}
+.zytx li:not(:last-child),
+.rxkc li:not(:last-child) {
+  margin-right: 40px;
+}
+
+.zytx .more a {
+  display: block;
+  text-align: center;
+}
+.zytx .more img {
+  margin-top: 15px;
+}
+.zytx .more h3 {
+  margin: 20px 0px;
+}
+.zytx .more .btn {
+  margin: auto;
+  width: 160px;
+  border: 2px solid #fe933a;
+  height: 42px;
+  line-height: 42px;
+  color: #fe933a;
+}
+.zytx .more .btn:hover {
+  background: #fe933a;
+  color: #fff;
+}
+
+/* 热销课程区域 -------------------------------------- */
+.rxkc li {
+  float: left;
+  width: 310px;
+  height: 230px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+}
+.rxkc li img {
+  border-radius: 10px 10px 0 0;
+}
+.rxkc .contain {
+  margin: 10px 15px 0px;
+}
+.rxkc .contain h3 {
+  color: #2c2c40;
+}
+
+.rxkc .contain .fl {
+  font-size: 14px;
+  color: #fe933a;
+}
+.rxkc .contain .fr {
+  font-size: 12px;
+  color: #abafbd;
+}
+
+/* 热门就业班区域 -------------------------------------- */
+
+.rmjyb .hd a,
+.tjjs .hd a,
+.goods .hd a {
+  font-size: 25px;
+  color: #333;
+}
+.rmjyb .more {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+.rmjyb .fl,
+.rmjyb .fr {
+  width: 660px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+}
+.rmjyb ul {
+  height: 120px;
+  text-align: center;
+}
+.rmjyb li {
+  display: inline-block;
+  margin: 30px 20px 0px;
+}
+.rmjyb .fr li {
+  margin: 30px 45px 0px;
+}
+.rmjyb a {
+  display: block;
+  font-size: 18px;
+  color: #666;
+}
+
+/*推荐讲师区域 ---------------------------------------- */
+.tjjs .bd {
+  margin-top: 30px;
+}
+.tjjs li {
+  float: left;
+  width: 268px;
+}
+.tjjs li:not(:last-child) {
+  margin-right: 96px;
+}
+.tjjs dl {
+  margin: 15px 8px;
+}
+.tjjs dt {
+  color: #333;
+}
+.tjjs a {
+  font-size: 14px;
+  color: #999;
+}
+
+.tjjs .main {
+  padding-bottom: 20px;
+  border-bottom: 2px solid #efefef;
+}
+.tjjs h3 {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #999999;
+}
+.tjjs p {
+  margin-top: 15px;
+}
+.tjjs .fenshu {
+  font-size: 14px;
+  color: #999;
+}
+.tjjs b {
+  color: #fe933a;
+}
+.tjjs .guanzhu {
+  font-size: 14px;
+  color: #999;
+}
+
+/* 传智旗下品牌区域 ---------------------------------------- */
+.goods{
+  margin-bottom:100px;
+}
+.goods .logo {
+  height: 100px;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  margin-top: 45px;
+}
+.goods ul {
+  text-align: center;
+}
+.goods li {
+  display: inline-block;
+  margin: 20px 10px;
+}
+

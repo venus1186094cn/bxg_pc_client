@@ -107,7 +107,7 @@
   background: url(../images/bgicon4.png) no-repeat 80px 15px;
 }
 .banner .more .current {
-  background-color: #ff7900;
+  background-color: #ff7900 !important;
 }
 .banner .more a:hover {
   background-color: #ff7900 !important;
